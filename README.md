@@ -14,3 +14,5 @@ This command is used to monitor errors while compiling typescript into js
 
 And this one is for monitoring node execution in DevTools with the ability to put breakpoints and debug
 - yarn nodemon --inspect dist/index.js
+This one allows monitoring TS files
+- nodemon --exec "node --inspect --require ts-node/register src/index.ts" 
